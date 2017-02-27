@@ -1,17 +1,25 @@
-<h1>this is landing template</h1>
-
-<div layout="column" ng-cloak class="md-inline-form">
-<md-content  layout-gt-sm="row" layout-padding>
-    <div>
-      <md-input-container>
-        <label>Title</label>
-        <input ng-model="user.title">
-      </md-input-container>
-
-      <md-input-container>
-        <label>Email</label>
-        <input ng-model="user.email" type="email">
-      </md-input-container>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <!-- <img alt="Brand" src="..."> -->
+        <p>Let It Grow</p>
+      </a>
     </div>
-  </md-content>
+    <form class="navbar-form navbar-right" role="search">
+      <div class="form-group">
+          <input type="text" class="form-control" placeholder="Username">
+          <input type="text" class="form-control" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-default">Log In</button>
+    </form>
+  </div>
+</nav>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Let It Grow!</h1>
+    <h3>Browser based garden managment</h3>
+    <p>Let It Grow is an open sourced browser based project that allows users to pull data from a indoor and outdoor gardens.    lorem dinky ipusm lorem dinky ipusm lorem dinky ipusm lorem dinky ipusm</p>
+  <p><a class="btn btn-primary btn-lg" ui-sref="signUp" role="button">Sign Up</a></p>
+  </div>
 </div>
