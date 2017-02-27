@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/StephenHanzlik/let-it-grow-capstone.png?label=ready&title=Ready)](https://waffle.io/StephenHanzlik/let-it-grow-capstone)
 # Routes with ui-router
 
 Create an Angular application that allows a user to navigate between different routes.
