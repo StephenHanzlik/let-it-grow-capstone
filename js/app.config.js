@@ -11,9 +11,9 @@
 
     $stateProvider
       .state({
-        name: 'loginPage',
+        name: 'mainLanding',
         url: '/',
-        component: 'login',
+        component: 'mainLanding',
       })
       .state({
         name: 'signUp',
@@ -21,9 +21,9 @@
         component: 'signUp',
       })
       .state({
-        name: 'new-house',
-        url: '/houses/new',
-        component: 'houseNew',
+        name: 'loginPage',
+        url: '/login',
+        component: 'login',
       })
       .state({
         name: 'show-house',
