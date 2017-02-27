@@ -41,3 +41,5 @@ Recall the 6-step process for configuring ui-router:
 1. Add `<ui-view>` to your HTML file
 1. Add the `<base>` tag to your HTML file
 1. Turn on `html5Mode`
+
+https://waffle.io/StephenHanzlik/let-it-grow-capstone
