@@ -18,6 +18,7 @@ var path = require('path');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(morgan('short'));
+app.use(express.static('public'));
 
 
 // const authorize = function(req, res, next) {
@@ -51,7 +52,6 @@ app.get('/', function(req, res, next) {
   // }
 });
 
-app.use(express.static('public'));
 
 // var users = require('./routes/users.js');
 // var uploads = require('./routes/upload-route.js');

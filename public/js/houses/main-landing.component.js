@@ -15,7 +15,7 @@
         //   $state.go('show-house', { id: vm.house.id })
         // }
       },
-      templateUrl: "templates/main-landing.html"
+      templateUrl: "../templates/main-landing.html"
     })
 
 }());
