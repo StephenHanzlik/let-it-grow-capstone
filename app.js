@@ -41,7 +41,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function(req, res, next) {
   console.log("get route hit");
-  res.sendFile('index.html');
+  // res.sendFile('index.html');
   //
   // if (req.token === 'dinkydinky@gmail.com') {
   //   res.sendFile(path.join(__dirname + '/public/user-landing-admin.html'));
