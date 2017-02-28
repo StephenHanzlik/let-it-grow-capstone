@@ -2,7 +2,10 @@
   "name": "angular-drill",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
+  "engines":{
+    "node": "7.2.0"
+  },
   "scripts": {
     "postinstall": "webdriver-manager update",
     "test": "protractor test/conf.js",
