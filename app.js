@@ -1,15 +1,15 @@
 'use strict';
 const express = require('express');
 const app = express();
-// const morgan = require('morgan');
+const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
-// const jwt = require('jsonwebtoken');
-// const cookieParser = require('cookie-parser');
-// const privateKey = 'my_awesome_cookie_signing_key';
-// const boom = require('boom');
-// var http = require('http');
-// var path = require('path');
+const jwt = require('jsonwebtoken');
+const cookieParser = require('cookie-parser');
+const privateKey = 'my_awesome_cookie_signing_key';
+const boom = require('boom');
+var http = require('http');
+var path = require('path');
 // var cors = require('./routes/cors');
 
 
@@ -39,15 +39,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //   }
 // };
 
-app.get('/landing', function(req, res, next) {
-  console.log(req.token);
-  console.log(res);
-
-  if (req.token === 'dinkydinky@gmail.com') {
-    res.sendFile(path.join(__dirname + '/public/user-landing-admin.html'));
-  } else {
-    res.sendFile(path.join(__dirname + '/public/user-landing.html'));
-  }
+app.get('/', function(req, res, next) {
+  console.log("get route hit");
+  res.sendFile('index.html');
+  //
+  // if (req.token === 'dinkydinky@gmail.com') {
+  //   res.sendFile(path.join(__dirname + '/public/user-landing-admin.html'));
+  // } else {
+  //   res.sendFile(path.join(__dirname + '/public/user-landing.html'));
+  // }
 });
 
 app.use(express.static('public'));
