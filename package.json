@@ -9,7 +9,7 @@
   "scripts": {
     "postinstall": "webdriver-manager update",
     "test": "protractor test/conf.js",
-    "start": "lite-server"
+    "start": "nodemon"
   },
   "keywords": [],
   "author": "",
