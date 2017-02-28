@@ -41,6 +41,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function(req, res, next) {
   console.log("get route hit");
+  res.sendStatus(200);
   // res.sendFile('index.html');
   //
   // if (req.token === 'dinkydinky@gmail.com') {
